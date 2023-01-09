@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-def lookup(obj):
-    
-    """ Function that returns the list of available attributes
-        and methods of an object
-    
-    Args:
-        obj: instance of the class
-    
-    Returns:
-        List of attributes
-    """
+"""Module for method lookup."""
 
-    return dir(obj)
+
+def lookup(arg):
+
+    """This function returns a list of all the
+    available methods and attributes.
+        Args:
+            arg (object): inbuild or user class object.
+        Returns:
+            list: Returnss a list of all the attributes
+            and methods available in a class.
+    """
+    return dir(arg)
