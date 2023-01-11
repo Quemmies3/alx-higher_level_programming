@@ -3,6 +3,7 @@
 import json
 import os.path
 import sys
+from sys import argv
 
 
 if __name__ == "__main__":
@@ -11,7 +12,7 @@ if __name__ == "__main__":
     load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
     arg_len = len(sys.argv)
-    json_file = "add_file.json"
+    json_file = "add_item.json"
     list_0 = []
 
     if not os.path.exists(json_file):
